@@ -1,0 +1,12 @@
+{
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "npx medusa build",
+    "watchPatterns": ["src/**"]
+  },
+  "deploy": {
+    "startCommand": "npx medusa start",
+    "healthcheckPath": "/health",
+    "restartPolicyType": "ON_FAILURE"
+  }
+}
