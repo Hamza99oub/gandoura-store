@@ -1,0 +1,10 @@
+{
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "npx medusa build"
+  },
+  "deploy": {
+    "startCommand": "npx medusa start",
+    "restartPolicyType": "ON_FAILURE"
+  }
+}
