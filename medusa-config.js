@@ -6,6 +6,7 @@ module.exports = defineConfig({
   plugins: [],
   projectConfig: {
     databaseUrl: process.env.DATABASE_URL,
+    ...(process.env.REDIS_URL && { redisUrl: process.env.REDIS_URL }),
     http: {
       storeCors: process.env.STORE_CORS || "http://localhost:3000",
       adminCors: process.env.ADMIN_CORS || "http://localhost:9000",
