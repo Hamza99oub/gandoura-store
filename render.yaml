@@ -23,6 +23,8 @@ services:
         value: https://gandoura-store-api.onrender.com
       - key: AUTH_CORS
         value: https://gandoura-store-api.onrender.com
+      - key: PORT
+        value: "10000"
     autoDeploy: true
 
 databases:
