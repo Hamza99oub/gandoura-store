@@ -2,7 +2,7 @@
 set -e
 
 echo "Running database migrations..."
-npx medusa migrations run
+npx medusa db:migrate
 
 echo "Seeding database..."
 npx medusa seed || echo "Seed skipped (data may already exist)"

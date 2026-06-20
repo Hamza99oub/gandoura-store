@@ -9,7 +9,7 @@
     "dev": "medusa develop",
     "build": "medusa build",
     "start": "medusa start",
-    "migrations:run": "medusa migrations run",
+    "migrations:run": "medusa db:migrate",
     "seed": "medusa seed"
   },
   "dependencies": {
