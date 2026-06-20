@@ -24,9 +24,7 @@ services:
       - key: AUTH_CORS
         value: https://gandoura-store-api.onrender.com
     autoDeploy: true
-    healthCheckPath: /health
-    domains:
-      - gandoura-api.onrender.com
+    healthCheckPath: /admin/health
 
 databases:
   - name: gandoura-db
