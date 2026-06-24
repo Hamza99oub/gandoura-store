@@ -1,6 +1,6 @@
 const { MedusaContainer } = require("@medusajs/framework/utils");
 
-module.exports = async ({ container }) => {
+module.exports = { default: async ({ container }) => {
   const productModuleService = container.resolve("product");
   const regionModuleService = container.resolve("region");
   const salesChannelModuleService = container.resolve("sales_channel");
@@ -241,4 +241,4 @@ module.exports = async ({ container }) => {
   }
 
   process.stdout.write("Seed completed successfully.\n");
-};
+} };
