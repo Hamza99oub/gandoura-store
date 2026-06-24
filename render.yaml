@@ -17,6 +17,14 @@ services:
         generateValue: true
       - key: COOKIE_SECRET
         generateValue: true
+      - key: STORE_CORS
+        value: http://localhost:3000,https://al-qamis.vercel.app
+      - key: ADMIN_CORS
+        value: http://localhost:5173,http://localhost:9000,https://al-qamis.vercel.app
+      - key: AUTH_CORS
+        value: http://localhost:5173,http://localhost:9000,http://localhost:3000,https://al-qamis.vercel.app
+      - key: MEDUSA_ADMIN_ONBOARDING_TYPE
+        value: default
     autoDeploy: true
 
 databases:
