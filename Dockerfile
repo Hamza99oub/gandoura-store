@@ -1,10 +1,9 @@
-FROM node:20-alpine
+FROM node:20
 
-RUN apk add --no-cache python3 make g++
 WORKDIR /app
 
 COPY package.json package-lock.json* ./
-RUN npm ci --only=production
+RUN npm install
 
 COPY . .
 
