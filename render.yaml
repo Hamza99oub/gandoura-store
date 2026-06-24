@@ -25,6 +25,8 @@ services:
         value: http://localhost:5173,http://localhost:9000,http://localhost:3000,https://al-qamis.vercel.app
       - key: MEDUSA_ADMIN_ONBOARDING_TYPE
         value: default
+      - key: NODE_OPTIONS
+        value: "--max-old-space-size=512"
     autoDeploy: true
 
 databases:
